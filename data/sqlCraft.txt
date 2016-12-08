@@ -1,0 +1,8 @@
+SELECT *, point(-105.456173816, 40.01478187700008) <@> point(lon, lat)::point AS distance
+FROM permits
+WHERE (point(-105.456173816, 40.01478187700008) <@> point(lon, lat)) < 20 AND "AppliedDate" LIKE '2016%';
+
+
+https://raw.githubusercontent.com/RyanSPando/permit-node-server/earthdistance-rewrite/permits.dump
+
+http://s000.tinyupload.com/download.php?file_id=42339717987150068968&t=4233971798715006896865597
